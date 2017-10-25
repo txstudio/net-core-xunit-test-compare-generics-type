@@ -15,7 +15,14 @@
 
 >　取得程式碼後可自行註解複寫的方法實作並比較差異。
 
-## 架構
+## 使用流程
+- 取得範例程式碼
+- 進行單元測試
+- 移除 Stock 類別複寫的 Equals 與 GetHashCode 方法
+- 重新執行單元測試
+- 比較有無複寫 Equals 與 GetHashCode 方法結果
+
+### 架構
 |專案名稱|類型|名稱|
 |--|--|--|
 |Securities.Data|.NET Standard 2.0|資料物件|
@@ -23,7 +30,7 @@
 |Securities.UnitTest|.NET Core xUnit 單元測試專案|使用 xUnit 的單元測試專案|
 
 
-## 套件參考
+### 套件參考
 
 套件會因版本不同在實際呈現可能會有所差異。
 
